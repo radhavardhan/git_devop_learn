@@ -1,0 +1,114 @@
+how to add plain image iTo add a plain image (like a blank page or simple picture) in Canva for a drawing book, follow these steps:
+
+✅ Option 1: Add a Blank White Page (for kids to draw on)
+
+
+Open your Canva design (e.g., A4 document or custom book size).
+
+
+Click “Add page” at the bottom.
+
+
+If the page has a background:
+
+
+Click on the background
+
+
+Press Delete
+OR
+
+
+Change the color to white from the top color menu.
+
+
+
+
+Now you have a clean, plain drawing page.
+
+✅ Option 2: Add a Simple Image (Outline for Coloring Book)
+If you're creating a coloring/drawing book:
+
+
+Go to “Elements” (left sidebar).
+
+
+Search for:
+
+
+“line art”
+
+
+“coloring page”
+
+
+“outline drawing”
+
+
+“black and white illustration”
+
+
+
+
+Choose a simple black outline image.
+
+
+Resize it to fit your page.
+
+
+Keep background white.
+
+
+Tip:
+Use “Edit image” → Adjust → Increase contrast to make lines darker if needed.
+
+✅ Option 3: Upload Your Own Plain Image
+If you already have an image:
+
+
+Click “Uploads” on the left.
+
+
+Click “Upload files”.
+
+
+Select your image.
+
+
+Drag it onto the page.
+
+
+Resize and center it.
+
+
+
+✅ For Professional Drawing Book Setup
+For a clean interior:
+
+
+Use Margins (File → View settings → Show margins).
+
+
+Keep images inside safe margin.
+
+
+Use consistent spacing on every page.
+
+
+Export as PDF Print for printing.
+
+
+
+If you'd like, tell me:
+
+
+What size book are you making? (A4, 8.5x11, 6x9, etc.)
+
+
+Is it a kids coloring book or sketch book?
+
+
+Are you uploading to Amazon KDP?
+
+
+I can guide you step-by-step for your exact project. 😊n canva page for drawing book
