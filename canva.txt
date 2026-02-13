@@ -12,8 +12,7 @@ Click “Add page” at the bottom.
 If the page has a background:
 
 
-Click on the background
-
+Click on the background`
 
 Press Delete
 OR

@@ -1,0 +1,84 @@
+Radamma C R
+
+Title:	Associate Consultant
+Location:	Hyderabad, India
+Languages:	Kannada (Native), English (Fluent), Telugu(Conversational),
+Hindi(Conversational)
+Experience Summary
+
+Skilled and experienced professional with more than 4 years of IT experience currently working as Software Engineer with hands on experience on Python, Rest API, AWS Services and SQL for Development.
+KEY SKILLS:
+
+•	Functional: Team Building, Strategic/Tactical Planning, Business Analysis and Development, Communication and Interpretation
+•	Technical: AWS Services, Python, Rest API, Pyspark, MySQL,
+
+Experience
+
+
+01	Type of Industry:	E-Commerce
+	Project
+Description:	Credit Card Acquisition (Win with Platform organized by Adobe)(Capgemini)
+	Role/Title:	Data Engineer
+	Project Duration:	3 months
+	Responsibilities:	Worked as data engineer in which created schemas, datasets. And we did data ingestion, validation and Segment creation for the same project
+	Operating
+Systems:	Windows
+	Software /
+Languages:	Adobe Experience Platform
+
+
+02	Type of Industry:	Website
+	Project
+Description:	Artomate Studio PVT LTD, Bangalore(Artomate)
+	Role/Title:	Software Engineer
+	Project Duration:	1 year
+	Responsibilities:	•	Backend Developer on Artomate WebApp. Implemented WebApp using Python (Django framework), Angular and MySQL server.
+•	Actively involved in developing REST API for create, read, update and delete (CRUD) operations for Active Record. Implemented MVC architecture in developing the web applications with the help of Django framework.
+•	Developed REST API's to integrate front end with backend to store data and to communicate with backend services. Implemented and design DB associated pipelines, improving server reusability to formulate processor to create a functional and seamless experience for use.
+•	Managed code versioning with GitHub.
+	Operating Systems:	Windows
+	Software /
+Languages:	Python[Django],Angular, Git, Pycharm tool
+
+
+
+
+Type of Industry	E-commerce
+03
+
+Project Description:
+
+Coty, UK(Capgemini)
+
+
+Role/Title:	Data Engineer
+Project Duration:   3 Year
+Responsibilities:  • Worked as an AWS Developer for e-commerce project. Working on AWS services, Design processing framework using Lambda, AWS Glue, Athena, Secrete Manager, API gateway, Cloud Logs, S3 in AWS Data Lake & Analytics application
+•	Developing data processing pipeline using Lambda, Athena & Kinesis in AWS & Analytics application.
+•	Developed AWS Lambda functions for pushing payloads from API Gateway to Kinesis in python.
+
+	•	Designed Secret manager to configure Adobe experience platform configuration details of dataset and schema to Ingest data from AWS to AEP.
+•	Worked as an AEP Developer. Worked on Schema, dataset, profiling and segmentation & more. Worked on real-time data as well as historical data using APIs and s3 connections and validated against AWS Athena.
+•	Also have knowledge to Design and implement CI/CD pipelines using CodePipeline, CodeBuild, and CodeDeploy
+Operating Systems:	Windows
+Software /
+Languages:	AWS Management Console, Pycharm, Adobe Experience Platform, Python,
+Pyspark, MySQL
+
+
+
+Training, Certifications & Affiliations
+1.	AWS Cloud Practitioner (CLF)
+2.	Adobe Experience Platform
+3.	Dataiku Core Designer
+4.	Agile software development
+5.	Tealium AudienceStream
+6.	Digital Product Management: Modern Fundamentals
+
+Achievements
+•	Won “Best Over All solution - Elevating Customer Experience Management” Prize in WIN with PLATFORM.
+•	Rising Star Award on July-2022
+
+Higher Education
+2014: Master of Computer Application from Cambridge Institute of Technology, Visvesvaraya Technological University
+2011: Bachelor of Computer Application from VeeraShaiva College, Gulbarga University.
