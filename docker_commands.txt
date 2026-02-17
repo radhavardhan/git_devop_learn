@@ -1,0 +1,255 @@
+devops course link
+https://upskill.tutedude.com/course/lecture-devops
+
+
+https://upskill.tutedude.com/course/lecture-devops
+
+If you are facing any issues with lectures, mentors or technical, WhatsApp at +91 9296214803
+
+objectives:devops
+maintain the  code,deploy the code,monitor the code, scale the code
+ci/cd
+cantainer- normaliing environment for running code.
+useful -1.in a team it will be usefull all team member will have exactly same and all required version of packeges or libreries of application.
+2. run on server
+cloud provider -- to provide services
+aws,azure,gcp
+1.server
+2.IP address
+3.DNS
+4.databases
+5.storage
+6.runtimes
+
+scripting/basic-dev:
+1.bash -bourne again shell
+2.python
+
+configuration management tools:
+1.ansible
+2.ngnix
+
+
+cloud
+IAAS  - hardware is a infrastrutcure
+SAAS-database is softaware
+PAAS -google is platform
+
+$ main type of databases
+1.realtional/sql db- databases->tables->
+   rows->columns(mysql,postgres,oracle,sql
+   server)
+2.NOsql/document db - databases ->collections->documents (mangodb,couchdb )
+3.Grapgh db -databases ->nodes->edges(Neo4 ,etc)
+4. key-value db -databses->kesy->values (redis,raik,etc)
+5.blob stores -databses ->blobs(amazon s3,google cloud storage etc)
+
+========================================================
+git init
+git add .
+git status
+git commit -m ""
+git log
+to revoke changes  - git restore --stage index.html
+
+git diff - to see diiference of each commit
+git diff {commit id}
+to remove last commit
+git reset --hard {commit id}
+================================
+
+Docker- containerize applications
+
+docker uses same os,hardeware
+docker image are very lightweight
+VM -will take more place, different os
+
+commands
+•	docker pull
+•	docker run
+docker run -it ubuntu -?to make the docker for aome time . it - interactive attach -attach local terminal to docker image.
+•	docker ps command - to list all the running container
+•	docker stop {container id or name}
+•	docker start
+•	docker logs {containerid}
+•	docker exec -used to run image command inside image pull done
+sudo docker exec -it 49ec08e046f2 {bash,ls,cat ,any commands we can run}  === inside image
+to see docker image inside local system or ec2 that means if you want to see where docker image has been pulled then use docker exec -it {containerid} command
+to create file inside nginx docker image -update apt -apt update, then install vim if vim is not there
+then vim testfile.txt
+•	docker inspect {container id}- gives the information about the container itself
+
+docker image to pull in ec2
+create ec2 then connect and run below commands
+sudo yum update -y
+sudo yum install docker -y
+sudo systemctl start docker
+sudo usermod -aG docker ec2-user
+
+Pull a Simple Docker Image (Nginx)
+docker pull nginx
+
+
+This pulls the official Nginx image from Docker Hub.
+
+4️⃣ Verify the Image
+docker images
+
+
+You should see nginx listed.
+++++++++++++++++++++++++++++++++++++++++
+This error means your current user does not have permission to access the Docker daemon socket (/var/run/docker.sock) on your Amazon EC2 instance.
+
+Docker requires either:
+
+sudo access
+OR
+
+Your user to be part of the docker group
+
+✅ Quick Fix (Immediate)
+
+Run the command with sudo:
+
+sudo docker pull nginx
+
+
+If this works, the issue is confirmed: it's a permissions problem.
+
+✅ Permanent Fix (Recommended)
+
+Add your user to the docker group so you don’t need sudo every time.
+
+1️⃣ Add user to docker group
+
+If you're using Amazon Linux:
+
+sudo usermod -aG docker ec2-user
+
+
+If you're using Ubuntu:
+
+sudo usermod -aG docker ubuntu
+
+2️⃣ Log out and log back in
+
+This step is required.
+
+Exit SSH:
+
+exit
+
+
+Then reconnect:
+
+ssh -i your-key.pem ec2-user@your-ec2-public-ip
+
+3️⃣ Test Without sudo
+docker pull nginx
+
+
+It should now work without permission errors.
+
+🔎 Why This Happens
+
+Docker runs as a service and controls the socket:
+
+/var/run/docker.sock
+
+
+Only:
+
+root
+
+users in the docker group
+
+can access it.
++++++++++++++++++++++++++++++++
+Pulling the Nginx image is not enough — you must run it and expose port 80 on your Amazon EC2 instance.
+
+Follow these exact steps 👇
+
+✅ Step 1: Run Nginx and Map Port 80
+
+On your EC2 instance:
+
+docker run -d -p 80:80 --name mynginx nginx
+
+
+This means:
+
+First 80 → EC2 machine port
+
+Second 80 → Nginx container port
+
+✅ Step 2: Allow Port 80 in EC2 Security Group (VERY IMPORTANT)
+
+Go to:
+
+AWS Console → EC2 → Security Groups → Inbound Rules
+
+Add rule:
+
+Type	Protocol	Port	Source
+HTTP	TCP	80	0.0.0.0/0
+
+Save it.
+
+Without this, browser cannot access your server.
+
+✅ Step 3: Get Your EC2 Public IP
+
+Run:
+
+curl ifconfig.me
+
+
+OR check in AWS console.
+
+Example:
+
+3.110.25.100
+
+✅ Step 4: Open in Browser
+
+Type:
+
+http://your-ec2-public-ip
+
+
+Example:
+
+http://3.110.25.100
+
+
+You should see:
+
+Welcome to nginx!
+
+🔎 If It Doesn't Work
+
+Check these:
+
+1️⃣ Is container running?
+docker ps
+
+
+You should see 0.0.0.0:80->80/tcp
+
+2️⃣ Is port 80 already used?
+sudo lsof -i :80
+
+3️⃣ Check container logs
+docker logs mynginx
+
+⚡ Quick Checklist
+
+✔ Docker running
+✔ Container running
+✔ -p 80:80 used
+✔ Security group allows port 80
+✔ Using public IP
+
+
+
+
