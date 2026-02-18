@@ -78,6 +78,9 @@ to see docker image inside local system or ec2 that means if you want to see whe
 to create file inside nginx docker image -update apt -apt update, then install vim if vim is not there
 then vim testfile.txt
 •	docker inspect {container id}- gives the information about the container itself
+•	docker rmi  {image id}  -to remove all tangling images from docker
+•	docker  rm  $(docker ps -aq)->after docker is stop it still present in memory may be for future use . to remove those use this command
+•	docker ps -aq ->to get only container ids
 
 docker image to pull in ec2
 create ec2 then connect and run below commands
