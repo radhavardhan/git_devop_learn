@@ -1,0 +1,15 @@
+Developing with containers in docker
+•	Ares app(html,node js and flask)
+•	Mangodb and mango express setup with container
+•	Docker network
+
+python ares_app.py
+
+steps to remember my own EC@ create in pluralsight
+create ec2 then connect and run below commands-Security Group:Allow SSH (22) from your IP,,Allow HTTP (80) from Anywhere (0.0.0.0/0)
+sudo yum update -y
+sudo yum install docker -y
+sudo systemctl start docker
+sudo usermod -aG docker ec2-user
+
+

@@ -1,0 +1,43 @@
+LAB
+
+Creating a Static Website with S3
+
+Step 1: Create a Bucket
+Navigate to the S3 console at https://console.aws.amazon.com/s3/.
+Click Create bucket.
+Provide a unique bucket name. Your bucket name should reflect your domain name if you plan to use one (e.g., www.example.com).
+Select a Region that is closest to your expected visitors for the best performance.
+Make sure to uncheck and disable Block all public access and acknowledge that the bucket will be publicly accessible, then leave the rest as the default settings.
+Click Create bucket.
+Step 2: Upload Site Files to Your Bucket
+Open your newly created bucket by clicking on its name.
+Download error.html and newstory.html from https://github.com/pluralsight-cloud/Amazon-S3-Deep-Dive.
+Click Upload.
+Click Add files to select your website files (error.html and newstory.html HTML files).
+Click Upload.
+Step 3: Make Your Bucket Content Publicly Accessible
+Go to the Permissions tab of your bucket.
+Click Edit in the Bucket policy section.
+Enter a bucket policy that grants public read access to your website files. Here’s an example policy (replace your-bucket-name with your actual bucket name):
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "PublicReadGetObject",
+    "Effect": "Allow",
+    "Principal": "*",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::your-bucket-name/*"
+  }]
+}
+Click Save changes.
+Step 4: Enable Static Website Hosting
+With your bucket open, click the Properties tab.
+Scroll down to find the Static website hosting option and click Edit.
+Select Enable.
+For the Index document, enter the name of your homepage file (e.g., newstory.html). If you have a custom error page, you can also specify an Error document (e.g., error.html).
+Click Save changes.
+Step 5: Test the Website URL
+Go back to the Properties tab and find the Static website hosting section.
+You will see a Bucket website endpoint URL (e.g., http://your-bucket-name.s3-website-region.amazonaws.com).
+Copy and paste the URL into your web browser to test your static website.
+To test that the custom error page is functional, add some characters to the end of the URL (e.g., http://your-bucket-name.s3-website-region.amazonaws.com/abc123).

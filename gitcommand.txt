@@ -1,0 +1,30 @@
+gitk
+git checkout
+git pull origin branch name
+vim    .aws/credentials
+
+
+
+
+to change the commit before push to git
+git commit --amend -m
+
+
+
+to change branch name
+checkout branch to which need to make change
+
+git branch -m  bugfix/demand_gen_channel_support_for_campaign_added
+
+
+
+for reverting the old commit we can use:
+git log --oneline->we will be seeing the commits history we have done
+git reset --hard (have to pass the id which we want to revert)
+check changes are there in pycharm
+then git push origin new_feature_branch --force
+git log --oneline --graph
+
+
+delete branch remotly
+ git push origin :fix/authentication

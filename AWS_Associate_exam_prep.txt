@@ -1,0 +1,53 @@
+AWS -Associate exam prep questions
+
+https://login.us-east-1.auth.skillbuilder.aws/login?redirect_uri=https%3A%2F%2Fskillbuilder.aws%2FparseAuth&response_type=code&client_id=4ge76ro2nknc870bdudn76fkfm&state=1768197886T2hCz-mTX4HdM.x-8&code_challenge=6TgLrCkz6mKYONI_qJZ8p2eLhCJsLhsL6aHpdxT6bjE&code_challenge_method=S256
+
+
+cloudfront service  will help to imporove the performance of web application
+visualization -quicksight
+on-premises -private cloud
+to deploy virtual machine is client loaction is best as latency will be less
+installation of patch on the os is AWS responsiblity -when paas , saas
+installation of patch on the os is user when iaas
+AMI (amzon machine image)-reusable
+EC2 - saving plan instance- if a load is predictable ,on an avergae workload and can use for 2 to 3 years then use this
+reserved instance -if load is predictable but if spiked up then use this
+dedecated host-if licsence is there then use
+on-demand instances - sceneraio like testing then use this
+spot instance- task is nit importentent and it can be interiptuded
+snapshots =incremental data backup
+snapchat 1st is the entire backup but after that only incremental backup
+storage  -object -s3
+                  block -EBS
+                 file -EFS - windows os
+AWS Region to host your applications and workloads, consider four main aspects: latency, price, service availability, and compliance.
+API calls to AWS is - AWS management console, AWS Command Line Interface(use terminal or AWS cloudshell),
+AWS Software Development Kits
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+IAM
+policy has four major JSON elements: Version, Effect, Action, and Resource.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+VPC
+
+subnet, route,internet gateway
+by defaoult all AWS resoiurce are created in defult VPC
+we can create our own VPC
+steps - 1.create VPC 2.create EC2 in VPC(your VPC)-public subnet
+               3. create subnets(public and private)Note: coucious on CIDR IP allocation
+               4.create Internet gateway because to access EC2 server we need IP to access internet. after creating IG attach to VPC(your VPC)
+               5.create routtable and associate with subnet then add route for internet gateway to public subnet where EC2 created.
+               6. create NAT gateway in public subnet to give access to AWS services present in privarte subnet. through internet gateway we can access
+
+if any service want to associte our VPC then this endponits are used
+2 VPC end points
+1.gateway endpoint(free srvice) -s3,dynamo db
+2.interface endpoint(paid service) - if want to connect with any other AWS services
+
+NACL is firewal at subnet level(vpc)
+Security group is firewall at instance level(ec2).
+security group is statefull (if inbound allowed autometically outbound rukle is allowed). NACL is- stateless(we need to configure inbound and outbound)

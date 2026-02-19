@@ -79,6 +79,7 @@ to create file inside nginx docker image -update apt -apt update, then install v
 then vim testfile.txt
 •	docker inspect {container id}- gives the information about the container itself
 •	docker rmi  {image id}  -to remove all tangling images from docker
+•	docker image prune ->to remove all the dangling images
 •	docker  rm  $(docker ps -aq)->after docker is stop it still present in memory may be for future use . to remove those use this command
 •	docker ps -aq ->to get only container ids
 
